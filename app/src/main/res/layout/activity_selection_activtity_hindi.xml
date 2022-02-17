@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download123"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/buttonhindi"
+        android:layout_width="213dp"
+        android:layout_height="61dp"
+        android:layout_above="@+id/videoView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="41dp"
+        android:gravity="center"
+        android:text="तस्वीर खींचे" />
+
+    <Button
+        android:id="@+id/buttonmarathi"
+        android:layout_width="213dp"
+        android:layout_height="61dp"
+        android:layout_above="@+id/buttonhindi"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-2dp"
+        android:gravity="center"
+        android:text="पीडीएफ डाले" />
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </FrameLayout>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="383dp"
+        android:layout_height="428dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp" />
+</RelativeLayout>

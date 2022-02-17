@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download123"
+    tools:context=".MainActivityHindi">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <Button
+        android:id="@+id/captureimage"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageView"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="-290dp"
+        android:text="छवि कैप्चर करें" />
+
+    <Button
+        android:id="@+id/selectimage"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="-293dp"
+        android:text="गैलरी से छवि का चयन करेंा" />
+
+    <Button
+        android:id="@+id/detecttext"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/selectimage"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="-74dp"
+        android:text="टेक्स्ट का पता लगाएं" />
+
+    <TextView
+        android:id="@+id/imageDetails"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="6dp"
+        android:text=""
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:scrollbars = "vertical"
+        android:textSize="15dp"
+        android:justificationMode="inter_word"/>
+
+
+    <Button
+        android:id="@+id/TranslateText"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/detecttext"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="-81dp"
+        android:text="इस पाठ का अनुवाद करें" />
+
+
+</RelativeLayout>
